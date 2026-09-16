@@ -1,17 +1,29 @@
 CREDENCIAIS - SISTEMA DE NOTAS
 
-Professor
+# Professores
 Usuário: professor
 Senha: 1234
 
-Alunos
+Usuário: andre
+Senha: An@10
+
+Usuário: matheus
+Senha: Mat#10
+
+Usuário: gustavo
+Senha: Gu$tagu
+
+# Alunos
 Usuário: joao
-Senha: 1234
+Senha: 0000
 
 Usuário: maria
-Senha: 1234
+Senha: senha
 
-Link para inserir no .docx:
-http://localhost:3000
+Usuário: heitor
+Senha: 4231
 
-Observação: se o professor publicar o sistema em uma hospedagem, substitua o link acima pela URL pública.
+Usuário: breno
+Senha: 4321 
+
+Link: https://alunos-production.up.railway.app/
