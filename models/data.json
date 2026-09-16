@@ -1,0 +1,8 @@
+{
+  "usuarios": [
+    { "id": 1, "nome": "Professor", "usuario": "professor", "senha": "1234", "tipo": "professor" },
+    { "id": 2, "nome": "João Silva", "usuario": "joao", "senha": "1234", "tipo": "aluno" },
+    { "id": 3, "nome": "Maria Souza", "usuario": "maria", "senha": "1234", "tipo": "aluno" }
+  ],
+  "notas": []
+}

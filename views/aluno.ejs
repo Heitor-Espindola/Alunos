@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minha Nota</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container center">
+    <div class="top"><h1>Minha Nota</h1><a href="/logout">Sair</a></div>
+    <p>Aluno: <strong><%= nome %></strong></p>
+    <div class="nota"><%= nota === null ? 'Sem nota cadastrada' : nota.toFixed(1) %></div>
+  </main>
+</body>
+</html>

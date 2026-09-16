@@ -1,0 +1,17 @@
+CREDENCIAIS - SISTEMA DE NOTAS
+
+Professor
+Usuário: professor
+Senha: 1234
+
+Alunos
+Usuário: joao
+Senha: 1234
+
+Usuário: maria
+Senha: 1234
+
+Link para inserir no .docx:
+http://localhost:3000
+
+Observação: se o professor publicar o sistema em uma hospedagem, substitua o link acima pela URL pública.

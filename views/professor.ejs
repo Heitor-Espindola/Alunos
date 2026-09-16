@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Painel do Professor</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="top"><h1>Painel do Professor</h1><a href="/logout">Sair</a></div>
+    <p>Olá, <strong><%= nome %></strong>. Cadastre ou altere a nota final dos alunos.</p>
+    <table>
+      <thead><tr><th>Aluno</th><th>Nota final</th><th>Ação</th></tr></thead>
+      <tbody>
+        <% alunos.forEach(aluno => { %>
+          <tr>
+            <td><%= aluno.nome %></td>
+            <td><%= aluno.nota === null ? 'Sem nota' : aluno.nota.toFixed(1) %></td>
+            <td>
+              <form action="/professor/nota" method="POST" class="inline">
+                <input type="hidden" name="alunoId" value="<%= aluno.id %>">
+                <input type="number" name="nota" min="0" max="10" step="0.1" value="<%= aluno.nota ?? '' %>" required>
+                <button>Salvar</button>
+              </form>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
